@@ -1,76 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Web Dev Hackethon</title>
-<style css>
-
-body {
-	font-family : Times New Roman;
-}
-header {
-	background : #2c3e50;
-	color : white;
-	text-align : center;
-}
-nav {
-	background : #2c3e50;
-	color : white;
-	text-align : center;
-}
-section {
-	margin : auto;
-	padding : 20px;
-	max-width : 1000px;
-}
-h2 {
-	color : #2c3e50;
-}
-.card {
-	background : white;
-	padding : 15px;
-	margin : 10px;
-	box-shadow : 0 2px 5px
-rgba(0,0,0,0.5);
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Pro Level Coaching</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Kristen ITC';
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: #f8fafc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?education,classroom') center/cover no-repeat;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+      background-blend-mode: overlay;
+      background-color: rgba(15, 23, 42, 0.5);
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .section {
+      padding: 4rem 0;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #0f172a;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .section p {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #0f172a;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      color: #1e293b;
+    }
+    .contact form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea, button {
+      font-family: inherit;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0f172a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #1e3a8a;
+    }
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
 </style>
 </head>
 <body>
-
 <header>
-	<h1>JUGAAD ONLINE COACHING CLASSES</h1>
-	<p>YOUR SUCCESS SPEAKS LOUDER THAN WORDS</p>
+	<h1>Jugaad Pro Level Coaching</h1>
+	<nav>
+     	<a href="#about">About</a>
+  	<a href="#courses">Courses</a>
+      	<a href="#why">Why Us</a>
+      	<a href="#testimonials">Testimonials</a>
+      	<a href="#contact">Contact</a>
+	</nav>
 </header>
-<nav>
-	Courses	Shedule	Contact	Reviews	Announcements
-</nav>
-<section id = "courses">
-	<h2>Courses Available</h2>
-	<div class = "card">
-	<h3>Class for 8-10</h3>
-	<p>Conceptual clearance to all Topics with preparation for Borads</p>
-	</div>
-	<div class = "card">
-	<h3>11th & 12th</h3>
-	<p>Good Teaching Staff with Regular tests ready to improve you in the right direction</p>
-	</div>
-	<div class = "card">
-	<h3>JEE / NEET / MHT-CET</h3>
-	<p>Strong Foundation with daily assesments under expertise</p>
-	</div>
+
+<section class="hero">
+    	<h2>Empower Your Learning Journey</h2>
+    	<p>Premier coaching for school, entrance exams, and career excellence</p>
 </section>
 
-<section id = "contact">
-<h2>Contact / Enquiry</h2>
-	<form>
-	Your Name :        <input type = "textbox" placeholder = "Abhinav Pandey" required><br>
-	Email Add. : <input type = "email" placeholder = "abhinavpandey54@gmail.com" required><br>
-	Mobile No. : <input type = "tel" max = 10 ><br>
-	<input type = "button" value = "Submit">
-	</form>
+  	<div class="container">
+    	<section id="about" class="section">
+      	<h2>About Us</h2>
+      	<p>Pro Level Coaching is a trusted institute with a team of dedicated educators helping students excel in academics and beyond. We foster critical thinking, discipline, and a growth mindset.</p>
+    	</section>
+
+    	<section id="courses" class="section">
+      	<h2>Our Courses</h2>
+      	<div class="grid">
+        	<div class="card">
+          	<h3>JEE & NEET Foundation</h3>
+          	<p>Strong base in Physics, Chemistry, Biology & Math for future exam success with mock tests and assignments.</p>
+        	</div>
+        	<div class="card">
+          	<h3>Class 8–10 Academic Support</h3>
+          	<p>In-depth classes aligned with CBSE, ICSE, and State Boards by expert tutors and small batches.</p>
+        	</div>
+	<div class="card">
+          	<h3>11th & 12th with Boards Presparations</h3>
+          	<p>Preparations for Boards under the care of Expertise.</p>
+        	</div>
+        	<div class="card">
+          	<h3>Spoken English & Personality Development</h3>
+          	<p>Enhance your communication, leadership, and public speaking skills with our unique training modules.</p>
+        	</div>
+        	<div class="card">
+          	<h3>Career Counselling & Aptitude</h3>
+          	<p>Explore the right career path with expert advice and assessments to discover your strengths.</p>
+        	</div>
+	<div class="card">
+          	<h3>Demo Lectures Available</h3>
+          	<p>Free Trial Experience type sessions depicting how normally the classes in our centre work.</p>
+        	</div>
+      	</div>
 </section>
-hello world
+
+<section id="why" class="section">
+      	<h2>Why Choose Us?</h2>
+      	<div class="grid">
+        	<div class="card">
+          	<h3>Expert Faculty</h3>
+          	<p>All our mentors are highly qualified and experienced in their respective domains.</p>
+        	</div>
+        	<div class="card">
+          	<h3>Personal Attention</h3>
+          	<p>We maintain small batches to ensure every student gets personal focus and support.</p>
+        	</div>
+        	<div class="card">
+          	<h3>Regular Assessments</h3>
+          	<p>Weekly tests, report analysis, and progress tracking help students stay exam-ready.</p>
+        	</div>
+      	</div>
+</section>
+
+<section id="testimonials" class="section testimonials">
+      	<h2>Testimonials</h2>
+      	<div class="grid">
+        	<div class="card">
+          	<blockquote>
+            	"The teaching style is amazing! My JEE rank improved significantly after joining here."
+          	</blockquote>
+          	<strong>- Ankit Verma</strong>
+        	</div>
+        	<div class="card">
+          	<blockquote>
+            	"I went from average to school topper in just one year! All thanks to Pro Level Coaching."
+          	</blockquote>
+          	<strong>- Sneha Kapoor</strong>
+        	</div>
+        	<div class="card">
+          	<blockquote>
+            	"Their communication and soft skill course helped me ace my job interviews."
+          	</blockquote>
+          	<strong>- Rahul Joshi</strong>
+        	</div>
+      	</div>
+</section>
+
+<section id="contact" class="section contact">
+      	<h2>Get in Touch</h2>
+      	<form>
+        	Your Name : <input type="text" placeholder="Abhinav Pandey" required />
+        	Email Address : <input type="email" placeholder="abhinavpandey@gmail.com" required />
+        	Address : <textarea placeholder="Your Message" rows="5" required></textarea>
+	Contact No. <input type = "tel" required>
+        	<button type="submit">Send Message</button>
+      	</form>
+</section>
+</div>
+
 <footer>
-	<p>&copy; 2025 Bright Future Coaching Center. All rights Reserved.</p>
+    	&copy; 2025 Jugaad Pro Level Coaching | Designed with passion and purpose
 </footer>
 </body>
 </html>
